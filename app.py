@@ -12,7 +12,7 @@ from linebot.models import *
 app = Flask(__name__)
 
 # 必須放上自己的Channel Access Token
-line_bot_api = LineBotApi('e/T4I9AO5tad1zfr65tGifqhI1Y18hGHPH/CG8suWlk2WgJMaOefu1y0ki8iQekOppkhRohVriFn8C4m0COJHr6gTodQz3s06T8xn/fHSDmBPOmnbCFIy6f0+kVVyTcnRt52s0GwccDevJm/GJ8hggdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('nudV5oukScZeWBnp2Cnhk9IZ411iCv2wVTzkPmINRiy2Ex7XB5KrhI818/DcjGcUppkhRohVriFn8C4m0COJHr6gTodQz3s06T8xn/fHSDmRYLmSzWYXHedU8iLCQ4ck225Z5YcoLVC6Af96NeNE1wdB04t89/1O/w1cDnyilFU=')
 # 必須放上自己的Channel Secret
 handler = WebhookHandler('61b226a0d4b617a6ae0214ada0701ed5')
 
@@ -46,4 +46,4 @@ def handle_message(event):
 import os
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0', port=port)
